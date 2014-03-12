@@ -4,6 +4,9 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+           
+  <remote  name="ace"
+           fetch="https://github.com/Ace-III-Dev"
 
   <remote  name="github"
            fetch="https://github.com"
@@ -25,7 +28,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="ParanoidAndroid/android_build" remote="github" revision="jellybean" >
+  <project path="build" name="android_build" remote="ace" revision="jellybean" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -60,7 +63,6 @@
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
-  <project path="external/chromium" name="ParanoidAndroid/android_external_chromium" remote="github" revision="jellybean" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
   <project path="external/cibu-fonts" name="platform/external/cibu-fonts" />
   <project path="external/clang" name="platform/external/clang" />
@@ -68,10 +70,8 @@
   <project path="external/dbus" name="platform/external/dbus" />
   <project path="external/dexmaker" name="platform/external/dexmaker" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
-  <project path="external/dnsmasq" name="platform/external/dnsmasq" />
   <project path="external/doclava" name="ParanoidAndroid/android_external_doclava" remote="github" revision="jellybean" />
   <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="ParanoidAndroid/android_external_e2fsprogs" remote="github" revision="jellybean" />
   <project path="external/easymock" name="platform/external/easymock" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
@@ -88,7 +88,6 @@
   <project path="external/freetype" name="platform/external/freetype" />
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
   <project path="external/ganymed-ssh2" name="platform/external/ganymed-ssh2" />
-  <project path="external/gcc-demangle" name="platform/external/gcc-demangle" />
   <project path="external/genext2fs" name="platform/external/genext2fs" />
   <project path="external/giflib" name="platform/external/giflib" />
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" />
@@ -97,11 +96,8 @@
   <project path="external/guava" name="platform/external/guava" />
   <project path="external/hamcrest" name="platform/external/hamcrest" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
-  <project path="external/hyphenation" name="platform/external/hyphenation" />
   <project path="external/icu4c" name="platform/external/icu4c" />
-  <project path="external/iproute2" name="platform/external/iproute2" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
-  <project path="external/iptables" name="platform/external/iptables" />
   <project path="external/jack" name="platform/external/jack" />
   <project path="external/javasqlite" name="platform/external/javasqlite" />
   <project path="external/javassist" name="platform/external/javassist" />
@@ -112,7 +108,6 @@
   <project path="external/jpeg" name="ParanoidAndroid/android_external_jpeg" remote="github" revision="jellybean" />
   <project path="external/jsilver" name="platform/external/jsilver" />
   <project path="external/jsr305" name="platform/external/jsr305" />
-  <project path="external/junit" name="platform/external/junit" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" />
   <project path="external/libffi" name="platform/external/libffi" />
@@ -191,7 +186,6 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" remote="aosp" revision="1724e02fae2f5a2de04e994567a8c74cd31068ef" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="ParanoidAndroid/android_external_webkit" remote="github" revision="jellybean" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/koush/Widgets" name="koush/Widgets" remote="github" revision="master" />
